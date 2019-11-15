@@ -1,0 +1,24 @@
+{
+  "name": "project-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisJ79/project-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisJ79/project-portfolio/issues"
+  },
+  "homepage": "https://github.com/ChrisJ79/project-portfolio#readme",
+  "dependencies": {
+    "less": "^3.10.3",
+    "lodash": "^4.17.15"
+  }
+}
