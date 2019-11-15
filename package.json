@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ChrisJ79/project-portfolio/issues"
   },
-  "homepage": "https://github.com/ChrisJ79/project-portfolio#readme"
+  "homepage": "https://github.com/ChrisJ79/project-portfolio#readme",
+  "dependencies": {
+    "less": "^3.10.3"
+  }
 }
