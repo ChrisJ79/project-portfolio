@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ChrisJ79/project-portfolio#readme",
   "dependencies": {
-    "less": "^3.10.3"
+    "less": "^3.10.3",
+    "vue": "^2.6.10"
   }
 }
