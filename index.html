@@ -9,33 +9,33 @@
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
-	<script src="app/js/app.js"></script>
 	<!-- <script src="node_modules/vue/dist/vue.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 <body>
 	<!-- TOP NAVIGATION -->
 	<nav class="uk-navbar-container uk-margin uk-background-primary" uk-navbar>
 	    <div class="uk-navbar-center">
-			<div class="uk-flex uk-flex-center uk-flex-middle" style="padding-top: 30px; padding-bottom: 30px;">
-				<h1 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove-bottom">Chris Johnson</h1>
+			<div id="developer" class="uk-flex uk-flex-center uk-flex-middle" style="padding-top: 30px; padding-bottom: 30px;">
+				<h1 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove-bottom">{{ title }}</h1>
 			</div>
 	    </div>
 	</nav>
 
 
-
-	<h1 class="uk-text-center">This is the future home of all of my web projects!</h1>
+	<div id="headline">
+		<h1 class="uk-text-center">{{ title }}</h1>
+	</div>
 	<div class="uk-section">
 		<div class="uk-container uk-container-large">
 			<div class="uk-child-width-1-3@m uk-grid" uk-height-match="target: > div > a > .uk-card" uk-grid>
 				<div>
 
 					<a href="#" class="uk-link-reset">
-						<div class="uk-card uk-card-body uk-card-default">
-							<h2 class="uk-text-center">Project #</h2>
+						<div v-on:click="reveal" class="uk-card uk-card-body uk-card-default project">
+							<h2 class="uk-text-center">{{ title }}</h2>
 							<div class="uk-cover-container">
-								<img src="app/assets/images/placeholder_img.png" alt="" uk-cover>
+								<img v-bind:src="img.src" v-bind:alt="img.alt" uk-cover>
 								<!-- http://chrisj79.github.io/shopping-list/main.html -->
 								<canvas height="300"></canvas>
 							</div>
@@ -49,7 +49,7 @@
 						<div class="uk-card uk-card-body uk-card-default">
 							<h2 class="uk-text-center">Project #</h2>
 							<div class="uk-cover-container">
-								<img src="app/assets/images/placeholder_img.png" alt="" uk-cover>
+								<img src="" alt="" uk-cover>
 								<!-- http://chrisj79.github.io/API-HACK/main.html -->
 								<canvas height="300"></canvas>
 							</div>
@@ -62,7 +62,7 @@
 						<div class="uk-card uk-card-body uk-card-default">
 							<h2 class="uk-text-center">Project #</h2>
 							<div class="uk-cover-container">
-								<img src="app/assets/images/placeholder_img.png" alt="" uk-cover>
+								<img src="" alt="" uk-cover>
 								<!-- http://chrisj79.github.io/quiz-app/final.html -->
 								<canvas height="300"></canvas>
 							</div>
@@ -75,7 +75,7 @@
 						<div class="uk-card uk-card-body uk-card-default">
 							<h2 class="uk-text-center">Project #</h2>
 							<div class="uk-cover-container">
-								<img src="app/assets/images/placeholder_img.png" alt="" uk-cover>
+								<img src="" alt="" uk-cover>
 								<canvas height="300"></canvas>
 							</div>
 							<p>Aliquam erat volutpat. Fusce pretium massa dui, id porttitor dolor commodo a. Donec sem sapien, maximus id porta quis, lobortis id leo. Maecenas quis placerat metus, vel pellentesque lectus. Aenean laoreet eu velit fringilla volutpat. Cras rhoncus mauris dictum maximus rhoncus. Praesent eu sem leo. Donec in mi aliquam, aliquet turpis vel, semper turpis.
@@ -89,7 +89,7 @@
 						<div class="uk-card uk-card-body uk-card-default">
 							<h2 class="uk-text-center">Project #</h2>
 							<div class="uk-cover-container">
-								<img src="app/assets/images/placeholder_img.png" alt="" uk-cover>
+								<img src="" alt="" uk-cover>
 								<canvas height="300"></canvas>
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor molestie ex, egestas porta nisi egestas et. Suspendisse efficitur vitae justo a placerat. Aenean dui arcu, cursus sed felis nec, faucibus commodo turpis. Curabitur elementum suscipit hendrerit. Donec rutrum pulvinar sapien, ac blandit nunc varius at. Proin</p>
@@ -101,7 +101,7 @@
 						<div class="uk-card uk-card-body uk-card-default">
 							<h2 class="uk-text-center">Project #</h2>
 							<div class="uk-cover-container">
-								<img src="app/assets/images/placeholder_img.png" alt="" uk-cover>
+								<img src="" alt="" uk-cover>
 								<canvas height="300"></canvas>
 							</div>
 							<p>Aliquam in metus orci. Fusce tempor varius eleifend. Praesent imperdiet vestibulum eros, a condimentum sem ornare ac. Nulla sed quam vel urna maximus sollicitudin. Aliquam vulputate felis quam, vel aliquam lorem sodales in.</p>
@@ -111,5 +111,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app/js/app.js"></script>	
 </body>
 </html>
