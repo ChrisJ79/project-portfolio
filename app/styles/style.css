@@ -6,6 +6,11 @@ body {
 	min-height: 450px;
 }
 
+
+#sub_headline {
+	opacity: 0.5;
+}
+
 #vue_logo {
 	width: 100px;
 	height: auto;
