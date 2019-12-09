@@ -5,3 +5,9 @@ body {
 .uk-card {
 	min-height: 450px;
 }
+
+#vue_logo {
+	width: 100px;
+	height: auto;
+    margin-top: 2px;
+}
